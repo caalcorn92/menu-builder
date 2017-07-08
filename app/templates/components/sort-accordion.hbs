@@ -1,0 +1,15 @@
+{{#ui-sortable content=model handle=".fa-list-ul" class="accordion-menu" moved=(action "logIt") as |row|}}
+	<li class="has-children">
+		<input type="checkbox" name ="group-{{row.pOrder}}" id="group-{{row.pOrder}}" >
+		<label for="group-{{row.pOrder}}">{{row.pName}} {{fa-icon "list-ul"}} {{fa-icon "sort-desc"}}</label>
+  		{{#ui-sortable content=row.pList handle=".fa-list-ul" class="row2" connectWith=".row2" moved=(action "logIt") as |row2|}}
+  			<li class="has-children">
+  				<input type="checkbox" name ="sub-group-{{row.pOrder}}{{row2.sOrder}}" id="sub-group-{{row.pOrder}}{{row2.sOrder}}">
+				<label for="sub-group-{{row.pOrder}}{{row2.sOrder}}">{{row2.sName}} {{fa-icon "list-ul"}} {{fa-icon "sort-desc"}}</label>
+  				{{#ui-sortable content=row2.sList handle=".fa-list-ul" class="row3" connectWith=".row3" moved=(action "logIt") as |row3|}}
+					<li>{{row3.iName}} {{fa-icon "list-ul"}}</li>
+				{{/ui-sortable}}
+  			</li>
+		{{/ui-sortable}}
+	</li>
+{{/ui-sortable}}

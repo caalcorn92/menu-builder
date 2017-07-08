@@ -1,0 +1,6 @@
+{
+  "name": "site",
+  "dependencies": {
+    "jquery-ui": "^1.12.1"
+  }
+}

@@ -1,0 +1,10 @@
+{{#ui-sortable content=model moved=(action "logIt") as |row|}}
+	<li>
+		{{row.pName}}
+		{{#ui-sortable content=row.pList moved=(action "logIt") as |row2|}}
+			<li>
+				{{row2.sName}}
+			</li>
+		{{/ui-sortable}}
+	</li>
+{{/ui-sortable}}

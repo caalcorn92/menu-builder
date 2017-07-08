@@ -1,0 +1,87 @@
+/* ----------------------------
+
+Main Components 
+
+-------------------------------- */
+.accordion-menu {
+  background: #fff;
+  margin:10px;
+  padding-left:0;
+  font-family:sans-serif;
+
+  ul {
+    // by default hide all sub menus
+    display: none;
+    padding-left:0;
+  }
+
+  li {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    list-style-type: none;
+  }
+
+  label {
+    cursor: pointer;
+  }
+
+  label,
+  ul > li > ul > li {
+    position: relative;
+    display: block;
+    padding: 9px 18px 9px 18px;
+    background: #fff;
+    color: #666;
+    font-size: 14px;
+    border-bottom:solid #ccc 1px;
+  }
+
+  // level 2: sections
+  ul label,
+  ul > li > ul > li {
+    margin-left: 20px;
+  }
+
+  // level 3: items
+  ul ul label,
+  ul > li > ul > li {
+      margin-left: 40px;
+  }
+
+  input[type=checkbox] {
+    /* hide native checkbox */
+    position: absolute;
+    opacity: 0;
+  }
+
+  input[type=checkbox]:checked + label + ul,
+  input[type=checkbox]:checked + label:nth-of-type(n) + ul {
+    // show menu items when clicked
+    display: block;
+  }
+
+  // sortable icons
+
+  i {
+    float:right;
+    padding: 0px 12px 0px 0px;
+    color:#9B9B9B;
+  }
+
+  label i.fa-list-ul {
+    padding-left: 20px;
+  }
+  label i.fa-sort-desc {
+    position:relative;
+    top:-4px;
+    right:0px;
+  }
+  label i.fa-sort-asc {
+    position:relative;
+    top:4px;
+    right:0px;
+  }
+
+}
