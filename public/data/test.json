@@ -1,6 +1,6 @@
 [
     {
-        "pName":"Page 1",
+        "pName":"Breakfast",
         "pOrder":1,
         "pDesc":"Here is the page description.",
         "pList": [
@@ -12,7 +12,7 @@
                     {
                         "iName":"Item 1",
                         "iDesc":"Here is the item description",
-                        "iPrice":10,
+                        "iPrice":10.50,
                         "iOrder":1
                     },
                     {
@@ -82,7 +82,7 @@
         ]
     },
     {
-        "pName":"Page 2",
+        "pName":"Lunch",
         "pOrder":2,
         "pDesc":"Here is the page description.",
         "pList": [
@@ -164,7 +164,7 @@
         ]
     },
     {
-        "pName":"Page 3",
+        "pName":"Dinner",
         "pOrder":3,
         "pDesc":"Here is the page description.",
         "pList": [

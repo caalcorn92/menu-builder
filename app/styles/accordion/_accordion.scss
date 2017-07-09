@@ -73,6 +73,9 @@ Main Components
   label i.fa-list-ul {
     padding-left: 20px;
   }
+  label i.fa-list-ul:active {
+    cursor:move;
+  }
   label i.fa-sort-desc {
     position:relative;
     top:-4px;

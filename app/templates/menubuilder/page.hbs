@@ -1,0 +1,7 @@
+{{#global-chrome}}{{model.pName}}{{/global-chrome}}
+<main class="page-section">
+	{{#menu-page-header model=model}}{{/menu-page-header}}
+	{{#each model.pList as |section|}}
+		{{#menu-section-header model=section}}{{/menu-section-header}}
+	{{/each}}
+</main>
